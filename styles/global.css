@@ -122,6 +122,8 @@ form {
 
 .input-item {
   margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
