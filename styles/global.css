@@ -147,3 +147,8 @@ input::placeholder {
   font-size: 16px;
   line-height: 24px;
 }
+
+.full-width {
+  width: 100%;
+  max-width: none;
+}
