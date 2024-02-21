@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>판다마켓 - 로그인</title>
+    <title>판다마켓 - 회원가입</title>
     <link rel="icon" href="images/logo/favicon.ico" />
     <link
       rel="stylesheet"
@@ -30,6 +30,14 @@
           />
         </div>
         <div class="input-item">
+          <label>닉네임</label>
+          <input
+            name="nickname"
+            type="text"
+            placeholder="닉네임을 입력해 주세요"
+          />
+        </div>
+        <div class="input-item">
           <label>비밀번호</label>
           <input
             name="password"
@@ -37,8 +45,16 @@
             placeholder="비밀번호를 입력해 주세요"
           />
         </div>
+        <div class="input-item">
+          <label>비밀번호 확인</label>
+          <input
+            name="passwordConfirmation"
+            type="password"
+            placeholder="비밀번호를 다시 한 번 입력해 주세요"
+          />
+        </div>
 
-        <a href="/" class="button pill-button full-width">로그인</a>
+        <a href="/" class="button pill-button full-width">회원가입</a>
       </form>
 
       <div class="social-login-container">
@@ -60,7 +76,7 @@
       </div>
 
       <div class="auth-switch">
-        판다마켓이 처음이신가요? <a href="/signup">회원가입</a>
+        이미 회원이신가요? <a href="/signin">로그인</a>
       </div>
     </div>
   </body>
