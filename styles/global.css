@@ -122,10 +122,10 @@ button {
   margin: 0 auto;
 }
 
-.logo-home-button {
+.logo-home-button-wrapper {
   display: block;
   text-align: center;
-  margin-top: 136px;
+  margin-top: 60px;
   margin-bottom: 40px;
 }
 
