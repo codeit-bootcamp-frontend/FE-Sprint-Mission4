@@ -55,11 +55,6 @@ input:focus {
   cursor: pointer;
 }
 
-.full-width {
-  width: 100%;
-  max-width: none;
-}
-
 .social-login-container {
   background-color: #e6f2ff;
   border-radius: 8px;

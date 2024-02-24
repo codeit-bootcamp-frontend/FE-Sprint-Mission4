@@ -129,3 +129,7 @@ button {
   border-radius: 999px;
   padding: 16px 126px;
 }
+
+.full-width {
+  width: 100%;
+}
