@@ -158,6 +158,10 @@ input::placeholder {
   line-height: 24px;
 }
 
+input:focus {
+  outline-color: var(--blue);
+}
+
 .input-wrapper {
   position: relative;
   display: flex;
