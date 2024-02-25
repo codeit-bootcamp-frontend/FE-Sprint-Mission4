@@ -1,6 +1,7 @@
 .auth-container {
-  max-width: 640px;
+  max-width: 400px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 .logo-home-button-wrapper {
@@ -86,4 +87,10 @@ input:focus {
   color: #3182f6;
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .auth-container {
+    max-width: 640px;
+  }
 }
