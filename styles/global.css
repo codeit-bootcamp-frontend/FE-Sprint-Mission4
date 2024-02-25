@@ -157,6 +157,11 @@ button {
   footer {
     padding: 32px 104px 108px 104px;
   }
+
+  #copyright {
+    flex-basis: auto;
+    order: 0;
+  }
 }
 
 @media (min-width: 1280px) {
