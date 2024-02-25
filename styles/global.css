@@ -118,10 +118,10 @@ button {
 }
 
 .pill-button {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 600;
   border-radius: 999px;
-  padding: 16px 126px;
+  padding: 14.5px 33.5px;
 }
 
 .full-width {
@@ -135,6 +135,12 @@ button {
 
   .wrapper {
     padding: 0 24px;
+  }
+
+  .pill-button {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 16px 126px;
   }
 }
 
