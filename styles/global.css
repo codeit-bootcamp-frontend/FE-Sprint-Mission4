@@ -128,6 +128,10 @@ button {
   width: 100%;
 }
 
+.break-on-desktop {
+  display: none;
+}
+
 @media (min-width: 768px) {
   header {
     padding: 0 24px;
@@ -147,5 +151,9 @@ button {
 @media (min-width: 1280px) {
   header {
     padding: 0 200px;
+  }
+
+  .break-on-desktop {
+    display: inline;
   }
 }
