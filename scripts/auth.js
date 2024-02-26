@@ -63,30 +63,43 @@ function validatePasswordConfirmationField() {
   }
 }
 
-const signupForm = document.getElementById("signupForm");
-const signinForm = document.getElementById("signinForm");
+function handleFormSubmission(formId, redirectUrl) {
+  const form = document.getElementById(formId);
+  if (!form) return;
 
-if (signupForm) {
-  f.addEventListener("submit", function (e) {
+  form.addEventListener("submit", function (e) {
     e.preventDefault();
-    window.location.href = "/";
+
+    validateEmailField();
+    validatePasswordField();
+    if (formId === "signupForm") {
+      validateNicknameField();
+      validatePasswordConfirmationField();
+    }
+
+    const isErrorVisible = document.querySelector(
+      '.error-message[style="display: block;"]'
+    );
+    if (!isErrorVisible) {
+      window.location.href = redirectUrl;
+    }
   });
 }
 
-if (signinForm) {
-  signinForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-    window.location.href = "/items";
-  });
-}
+handleFormSubmission("signupForm", "/");
+handleFormSubmission("signinForm", "/items");
 
 emailInput.addEventListener("focusout", validateEmailField);
-nicknameInput.addEventListener("focusout", validateNicknameField);
 passwordInput.addEventListener("focusout", validatePasswordField);
-passwordConfirmationInput.addEventListener(
-  "focusout",
-  validatePasswordConfirmationField
-);
+if (nicknameInput) {
+  nicknameInput.addEventListener("focusout", validateNicknameField);
+}
+if (passwordConfirmationInput) {
+  passwordConfirmationInput.addEventListener(
+    "focusout",
+    validatePasswordConfirmationField
+  );
+}
 
 function togglePassword(inputId) {
   const passwordInput = document.getElementById(inputId);
