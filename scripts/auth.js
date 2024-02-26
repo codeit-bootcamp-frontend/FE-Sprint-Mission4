@@ -63,6 +63,23 @@ function validatePasswordConfirmationField() {
   }
 }
 
+const signupForm = document.getElementById("signupForm");
+const signinForm = document.getElementById("signinForm");
+
+if (signupForm) {
+  f.addEventListener("submit", function (e) {
+    e.preventDefault();
+    window.location.href = "/";
+  });
+}
+
+if (signinForm) {
+  signinForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    window.location.href = "/items";
+  });
+}
+
 emailInput.addEventListener("focusout", validateEmailField);
 nicknameInput.addEventListener("focusout", validateNicknameField);
 passwordInput.addEventListener("focusout", validatePasswordField);
