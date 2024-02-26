@@ -68,7 +68,6 @@ input:focus {
 .toggle-password {
   position: absolute;
   right: 24px;
-  cursor: pointer;
 }
 
 .social-login-container {

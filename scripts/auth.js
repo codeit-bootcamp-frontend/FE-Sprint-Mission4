@@ -70,3 +70,19 @@ passwordConfirmationInput.addEventListener(
   "focusout",
   validatePasswordConfirmationField
 );
+
+function togglePassword(inputId) {
+  const passwordInput = document.getElementById(inputId);
+  const isPassword = passwordInput.getAttribute("type") === "password";
+  passwordInput.setAttribute("type", isPassword ? "text" : "password");
+
+  const toggleButton = passwordInput.nextElementSibling;
+  const icon = toggleButton.querySelector("img");
+
+  if (icon) {
+    icon.src = isPassword
+      ? "images/icons/eye-visible.svg"
+      : "images/icons/eye-invisible.svg";
+    icon.alt = isPassword ? "비밀번호 표시" : "비밀번호 숨김";
+  }
+}

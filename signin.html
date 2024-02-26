@@ -49,11 +49,13 @@
               placeholder="비밀번호를 입력해 주세요"
               required
             />
-            <img
-              src="images/icons/eye-invisible.svg"
-              alt="비밀번호 숨김"
+            <button
+              type="button"
               class="toggle-password"
-            />
+              onclick="togglePassword('password');"
+            >
+              <img src="images/icons/eye-invisible.svg" alt="비밀번호 숨김" />
+            </button>
           </div>
           <span id="passwordEmptyError" class="error-message"
             >비밀번호를 입력해주세요.</span
