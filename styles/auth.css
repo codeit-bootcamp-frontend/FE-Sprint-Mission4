@@ -55,6 +55,16 @@ input:focus {
   align-items: center;
 }
 
+.error-message {
+  color: #f74747;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  margin-top: 8px;
+  display: none;
+  padding-left: 16px;
+}
+
 .toggle-password {
   position: absolute;
   right: 24px;
